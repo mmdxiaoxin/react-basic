@@ -1,7 +1,11 @@
+import { useState } from 'react';
+
 function CommentWrap({ userInfo, setCommentsCount, commentsList, setCommentsList }) {
+    const [contentValue, setContentValue] = useState('');
+
     const handleSend = () => {
         const length = commentsList.length;
-        const newComment = { rpid: length + 1, user: userInfo, content: '这是一条评论!', ctime: '2003-1-21', like: 12 };
+        const newComment = { rpid: length + 1, user: userInfo, content: contentValue, ctime: '2003-1-21', like: 12 };
         commentsList.push(newComment);
         setCommentsList(commentsList);
         setCommentsCount(length);
@@ -16,7 +20,12 @@ function CommentWrap({ userInfo, setCommentsCount, commentsList, setCommentsList
                     </div>
                     <div className='reply-box-wrap'>
                         <div className='textarea-wrap'>
-                            <textarea className='reply-box-textarea' placeholder='你猜我的评论区再等谁？' />
+                            <textarea
+                                className='reply-box-textarea'
+                                placeholder='你猜我的评论区再等谁？'
+                                value={contentValue}
+                                onChange={(e) => setContentValue(e.target.value)}
+                            />
                         </div>
                     </div>
                 </div>
