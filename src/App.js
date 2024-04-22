@@ -1,6 +1,7 @@
 import ListRenderingStudy from './components/ListRenderingStudy';
 import ConditionRenderingStudy from './components/ConditionalRenderingStudy';
 import EventBinding from './components/EventBinding';
+import UpdateInterface from './components/UpdateInterface';
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <ListRenderingStudy />
             <ConditionRenderingStudy />
             <EventBinding />
+            <UpdateInterface />
         </div>
     );
 }
