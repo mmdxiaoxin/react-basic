@@ -1,0 +1,190 @@
+.comment-list {
+  font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  color: #222222;
+}
+
+.comment-list .reply-header {
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.comment-list .reply-header .reply-navigation {
+  margin-bottom: 22px;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar .nav-title {
+  display: flex;
+  align-items: center;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar .nav-title .nav-title-text {
+  display: flex;
+  font-size: 20px;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar .nav-title .total-reply {
+  color: #9499a0;
+  margin: 0 36px 0 6px;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar .nav-sort {
+  display: flex;
+  align-items: center;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar .nav-sort .hot-sort {
+  color: #18191c;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar .nav-sort .part-symbol {
+  height: 11px;
+  margin: 0 12px;
+  border-left: solid 1px;
+}
+
+.comment-list .reply-header .reply-navigation .nav-bar .nav-sort .time-sort {
+  color: #9499a0;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-normal {
+  display: flex;
+  height: 50px;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-normal .reply-box-avatar {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-normal .reply-box-avatar img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-normal .reply-box-wrap {
+  flex: 1;
+  border-color: #e3e5e7;
+  background-color: #fff;
+  border: 1px solid #e3e5e7;
+  border-radius: 6px;
+  overflow-x: hidden;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-normal .reply-box-wrap .textarea-wrap {
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: text;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-normal .reply-box-wrap .textarea-wrap .reply-box-textarea {
+  padding: 0 8px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 32px;
+  color: #222222;
+  outline: none;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-expand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+  margin-top: 10px;
+  z-index: 1;
+  height: 32px;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-expand .box-left {
+  display: flex;
+  align-items: center;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-expand .box-left div {
+  width: 32px;
+  height: 26px;
+  margin-right: 6px;
+  position: relative;
+}
+
+.comment-list .reply-wrap .main-reply-box .box-expand .reply-box-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #266cce;
+  color: #e3e5e7;
+  cursor: pointer;
+}
+
+.comment-list .reply-wrap .reply-list {
+  margin-top: 14px;
+  padding-bottom: 100px;
+}
+
+.comment-list .reply-wrap .reply-list .reply-item {
+  display: flex;
+}
+
+.comment-list .reply-wrap .reply-list .reply-item .root-reply-avatar {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-list .reply-wrap .reply-list .reply-item .root-reply-avatar .bili-avatar-img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: relative;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.comment-list .reply-wrap .reply-list .reply-item .content-wrap {
+  width: 100%;
+}
+
+.comment-list .reply-wrap .reply-list .reply-item .content-wrap .reply-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.comment-list .reply-wrap .reply-list .bottom-line {
+  margin-left: 80px;
+  border-bottom: 1px solid #e3e5e7;
+  margin-top: 14px;
+}
