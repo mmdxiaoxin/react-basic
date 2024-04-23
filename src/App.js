@@ -4,6 +4,7 @@ import EventBinding from './components/EventBinding';
 import UpdateInterface from './components/UpdateInterface';
 import Divider from './components/Divider';
 import CommentList from './components/CommentList';
+import DOMOption from './components/DOMOption';
 
 function App() {
     return (
@@ -17,6 +18,8 @@ function App() {
             <UpdateInterface />
             <Divider />
             <CommentList />
+            <Divider />
+            <DOMOption />
         </div>
     );
 }
