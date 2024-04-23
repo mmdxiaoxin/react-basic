@@ -5,6 +5,7 @@ import UpdateInterface from './components/UpdateInterface';
 import Divider from './components/Divider';
 import CommentList from './components/CommentList';
 import DOMOption from './components/DOMOption';
+import ContextStudy from './components/ContextStudy';
 
 function App() {
     return (
@@ -20,6 +21,8 @@ function App() {
             <CommentList />
             <Divider />
             <DOMOption />
+            <Divider />
+            <ContextStudy />
         </div>
     );
 }
