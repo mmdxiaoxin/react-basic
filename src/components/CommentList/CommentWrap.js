@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 import { generateRandomEightDigitInteger } from '../../utils/index';
 import CommentItem from './CommentItem';
-import { ReactComponent as EmojiIcon } from '../../asssets/images/CommentList/btn1.svg';
-import { ReactComponent as AtSvg } from '../../asssets/images/CommentList/btn2.svg';
-import { ReactComponent as ImageSvg } from '../../asssets/images/CommentList/btn3.svg';
+import { ReactComponent as EmojiIcon } from '../../assets/images/CommentList/btn1.svg';
+import { ReactComponent as AtSvg } from '../../assets/images/CommentList/btn2.svg';
+import { ReactComponent as ImageSvg } from '../../assets/images/CommentList/btn3.svg';
 
 function CommentWrap({ userInfo, setCommentsCount, commentsList, setCommentsList }) {
     const [contentValue, setContentValue] = useState('');

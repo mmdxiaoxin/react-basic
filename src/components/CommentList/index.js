@@ -1,7 +1,7 @@
 import './index.scss';
 import CommentHeader from './CommentHeader';
 import CommentWrap from './CommentWrap';
-import avatar from '../../asssets/images/test01.png';
+import avatar from '../../assets/images/test01.png';
 import { useState } from 'react';
 
 const user = {
