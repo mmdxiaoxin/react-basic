@@ -1,11 +1,18 @@
 import { useState } from 'react';
+import { generateRandomEightDigitInteger } from '../../utils/index';
 
 function CommentWrap({ userInfo, setCommentsCount, commentsList, setCommentsList }) {
     const [contentValue, setContentValue] = useState('');
 
     const handleSend = () => {
         const length = commentsList.length;
-        const newComment = { rpid: length + 1, user: userInfo, content: contentValue, ctime: '2003-1-21', like: 12 };
+        const newComment = {
+            rpid: generateRandomEightDigitInteger(),
+            user: userInfo,
+            content: contentValue,
+            ctime: '2003-1-21',
+            like: 12,
+        };
         commentsList.push(newComment);
         setCommentsList(commentsList);
         setCommentsCount(length);
@@ -44,8 +51,8 @@ function CommentWrap({ userInfo, setCommentsCount, commentsList, setCommentsList
             </div>
             <div className='reply-list'>
                 {commentsList.map((comment) => (
-                    <>
-                        <div key={comment.rpid} className='reply-item'>
+                    <div key={comment.rpid}>
+                        <div className='reply-item'>
                             {/**
                              * 头像
                              */}
@@ -73,7 +80,7 @@ function CommentWrap({ userInfo, setCommentsCount, commentsList, setCommentsList
                             </div>
                         </div>
                         <div className='bottom-line'></div>
-                    </>
+                    </div>
                 ))}
             </div>
         </div>
