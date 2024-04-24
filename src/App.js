@@ -6,6 +6,7 @@ import Divider from './components/Divider';
 import CommentList from './components/CommentList';
 import DOMOption from './components/DOMOption';
 import ContextStudy from './components/ContextStudy';
+import Counter from './components/Counter';
 
 function App() {
     return (
@@ -23,6 +24,8 @@ function App() {
             <DOMOption />
             <Divider />
             <ContextStudy />
+            <Divider />
+            <Counter />
         </div>
     );
 }
